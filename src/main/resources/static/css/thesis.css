@@ -1,0 +1,41 @@
+.login-form {
+    width: 400px; 
+    margin-top: 250px;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.login-submit-group {
+    margin-top: 30px;
+}
+
+.gray-color {
+    color: #999999;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-green {
+    color: green;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.center-line {
+    height: 30px;
+}

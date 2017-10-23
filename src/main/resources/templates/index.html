@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>用户管理系统-首页</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" media="all" href="../../css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}"
+  />
+  <link rel="stylesheet" type="text/css" media="all" href="../../css/thesis.css" th:href="@{/css/thesis.css}" />
+  <link rel="stylesheet" type="text/css" media="all" href="../../css/jquery-confirm.css" th:href="@{/css/jquery-confirm.css}"
+  />
+  <script th:src="@{/js/jquery-3.2.1.min.js}"></script>
+  <script th:src="@{/js/jquery-confirm.js}"></script>
+  <script th:src="@{/js/index.js}"></script>
+</head>
+
+<body>
+  <div class="">
+    <h1 class="login-title">用户列表</h1>
+    <div>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" id="search" placeholder="输入用户名搜索" onchange="getUserListByUserName(this.value)" />
+      </div>
+      <div class="col-lg-offset-6 col-lg-2">
+        <button type="button" class="btn btn-primary " onclick="onRegisterClick()">注册新用户</button>
+      </div>
+    </div>
+    <p class="center-line"/>
+    <table class="table table-striped margin-top-20" id="table-list">
+      <thead>
+        <tr>
+          <td class="active col-md-2">id</td>
+          <td class="success col-md-2">用户名</td>
+          <td class="warning col-md-2">密码</td>
+          <td class="danger col-md-2">年龄</td>
+          <td class="info col-md-2">性别</td>
+          <td class="active col-md-2">操作</td>
+        </tr>
+      </thead>
+      <tbody id="tbody-result">
+        <tr id="template">
+          <td id="id"></td>
+          <td id="userName"></td>
+          <td id="password"></td>
+          <td id="age"></td>
+          <td id="sex"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
